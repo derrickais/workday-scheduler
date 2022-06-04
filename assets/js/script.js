@@ -17,8 +17,7 @@ const populatePage = function() {
 };
 
 const colorFields = function(){
-    const date = new Date();
-    const currentHour = date.getHours();
+    const currentHour = moment().hour();
     for (let index = 9; index < 18; index++) {
         let hour = index;
         if (hour > 12) {
